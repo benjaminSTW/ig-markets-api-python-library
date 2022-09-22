@@ -353,7 +353,7 @@ class IGService:
         for _, lst in d_cols.items():
             for colname in lst:
                 s.add(colname)
-        return s
+        return list(s)
 
     @staticmethod
     def expand_columns(data, d_cols, flag_col_prefix=False, col_overlap_allowed=None):
